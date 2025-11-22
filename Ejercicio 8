@@ -1,0 +1,13 @@
+Algoritmo DeterminarDivisor   
+    Definir NumA, NumB, Resto Como Entero;
+Escribir "Ingrese el primer número (Posible Divisor - A):";
+    Leer NumA;
+    Escribir "Ingrese el segundo número (Dividendo - B):";
+    Leer NumB;
+    Resto <- NumB MOD NumA;
+    Si (Resto = 0) Entonces
+        Escribir NumA, " ES divisor de ", NumB;
+    SiNo
+        Escribir NumA, " NO es divisor de ", NumB;
+    FinSi
+FinAlgoritmo
