@@ -1,0 +1,28 @@
+Algoritmo PrecioTicketFerrocarril
+    Definir distanciaIda, diasEstancia Como Entero;
+    Definir distanciaTotal, costoBase, costoFinal, descuentoMonto Como Real;
+    Definir precioPorKm Como Real;
+    precioPorKm <- 0.23;
+    Escribir "--- Cálculo de Ticket Ferrocarril ---";
+    Escribir "Ingrese la distancia del trayecto de IDA (en km):";
+    Leer distanciaIda;
+    Escribir "Ingrese el número de días de estancia:";
+    Leer diasEstancia;
+    distanciaTotal <- distanciaIda * 2;
+    costoBase <- distanciaTotal * precioPorKm;
+    descuentoMonto <- 0;
+    Escribir "Distancia total (ida y vuelta): ", distanciaTotal, " km";
+    Escribir "Costo base sin descuento: $", costoBase;
+    Si (diasEstancia > 7 Y distanciaTotal > 800) Entonces
+        descuentoMonto <- costoBase * 0.30;
+        Escribir "¡Condiciones de descuento cumplidas! (Días > 7 Y Distancia > 800)";
+        Escribir "Descuento aplicado: 30%";
+    SiNo
+        Escribir "Condiciones de descuento no cumplidas. No se aplica descuento.";
+        
+    FinSi
+    costoFinal <- costoBase - descuentoMonto;
+    Escribir "Monto del Descuento: $", descuentoMonto;
+    Escribir "Precio Final del Ticket: $", costoFinal;
+    
+FinAlgoritmo
