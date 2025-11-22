@@ -1,0 +1,9 @@
+Algoritmo CalculoCirculo
+    Definir radio, area, circunferencia Como Real
+    Escribir "Ingrese el radio del círculo:"
+    Leer radio
+    area <- PI * (radio ^ 2)
+    circunferencia <- 2 * PI * radio
+    Escribir "El área del círculo es: ", area
+    Escribir "La circunferencia es: ", circunferencia
+FinAlgoritmo
