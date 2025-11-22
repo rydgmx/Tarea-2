@@ -1,0 +1,36 @@
+Algoritmo ClasificarSignos_Corregido
+    Definir Positivos, Negativos, Nulos Como Entero
+    Definir Arreglo Como Entero
+    Positivos = 0; Negativos = 0; Nulos = 0
+    Escribir "Ingrese el tamaño del arreglo (N):"
+    Leer N
+    Dimension Arreglo[N]
+    Para i = 1 Hasta N Con Paso 1 Hacer
+        Escribir "Ingrese el valor para el elemento ", i, ":"
+        Leer Arreglo[i]
+    FinPara
+	
+    
+    Para i = 1 Hasta N Con Paso 1 Hacer // <-- Probable Línea 28
+        
+        
+        Si Arreglo[i] > 0 Entonces
+            Positivos = Positivos + 1
+        Sino // Es cero o negativo
+            
+           
+            Si Arreglo[i] < 0 Entonces // <-- Probable Línea 31
+                Negativos = Negativos + 1
+            Sino // Si no es positivo ni negativo, es CERO
+                Nulos = Nulos + 1
+            FinSi // <-- Cierra el Si interior (Negativo/Nulo)
+            
+        FinSi // <-- Cierra el Si exterior (Positivo/Sino)
+        
+    FinPara // <-- Cierra el Para (Probable Línea 42)
+    Escribir "--- Resultados del Conteo ---"
+    Escribir "Positivos: ", Positivos
+    Escribir "Negativos: ", Negativos
+    Escribir "Nulos: ", Nulos
+	
+FinAlgoritmo
