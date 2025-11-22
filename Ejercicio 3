@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+ 
+    float dolares;
+    float pesos;
+    float tipo_cambio = 11.96; 
+    printf("Ingresa la cantidad de dolares a cambiar: ");
+    scanf("%f", &dolares); // El & es necesario en scanf para guardar el valor
+    pesos = dolares * tipo_cambio;
+    printf("%.2f dolares equivalen a: %.2f pesos.\n", dolares, pesos);
+    return 0;
+}
