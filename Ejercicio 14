@@ -1,0 +1,27 @@
+#include <stdio.h>
+#define MAX_SIZE 100 // Definimos un tamaño máximo
+int main() {
+    int N, i, NumeroBuscado;
+    int Contador = 0;
+    int Arreglo[MAX_SIZE]; // Arreglo estático
+    printf("Tamaño del arreglo (max %d): ", MAX_SIZE);
+    scanf("%d", &N);
+    if (N > MAX_SIZE || N <= 0) {
+        printf("Error: Tamaño inválido.\n");
+        return 1;
+    }
+    printf("Llenar arreglo:\n");
+    for (i = 0; i < N; i++) {
+        printf("Arreglo[%d]: ", i);
+        scanf("%d", &Arreglo[i]);
+    }
+    printf("Número a buscar: ");
+    scanf("%d", &NumeroBuscado);
+    for (i = 0; i < N; i++) {
+        if (Arreglo[i] == NumeroBuscado) {
+            Contador++;
+        }
+    }
+    printf("El número %d se encontró %d veces.\n", NumeroBuscado, Contador);
+    return 0;
+}
