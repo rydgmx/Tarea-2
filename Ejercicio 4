@@ -1,0 +1,12 @@
+Algoritmo InversionBanco
+    Definir capital, tasa, ganancia, monto_final Como Real
+    Escribir "Ingrese la cantidad de dinero a invertir (Capital):"
+    Leer capital
+	
+    Escribir "Ingrese la tasa de interés mensual (Solo el número, ej: para 5% escriba 5):"
+    Leer tasa
+    ganancia <- capital * (tasa / 100)
+    monto_final <- capital + ganancia
+    Escribir "La ganancia por intereses es: ", ganancia
+    Escribir "El monto total al finalizar el mes es: ", monto_final
+FinAlgoritmo
