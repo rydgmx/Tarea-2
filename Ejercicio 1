@@ -1,0 +1,13 @@
+Algoritmo OperacionesBasicas
+    Definir num1, num2, suma_res, resta_res, mult_res Como Real
+    Escribir "Por favor, ingrese el primer número:"
+    Leer num1
+    Escribir "Por favor, ingrese el segundo número:"
+    Leer num2
+    suma_res <- num1 + num2
+    resta_res <- num1 - num2
+    mult_res <- num1 * num2
+    Escribir "La suma es: ", suma_res
+    Escribir "La resta es: ", resta_res
+    Escribir "La multiplicación es: ", mult_res
+FinAlgoritmo
