@@ -1,0 +1,26 @@
+Algoritmo CalcularPagoElectrodomesticos
+    Definir montoCompra Como Real;
+    Definir descuento, montoAPagar Como Real;
+  
+    Escribir "Ingrese el monto total de la compra del cliente ($):";
+    Leer montoCompra;
+    
+    descuento <- 0;
+    
+   
+    Si montoCompra > 2500 Entonces
+        descuento <- montoCompra * 0.08; 
+        montoAPagar <- montoCompra - descuento;
+        
+        Escribir "¡Felicidades! Se ha aplicado un descuento del 8%.";
+        Escribir "Monto del descuento aplicado: $", descuento;
+    SiNo
+     
+        montoAPagar <- montoCompra;
+        
+        Escribir "El monto de la compra no supera los $2,500.";
+        Escribir "No se aplica descuento.";
+    FinSi
+    Escribir "---";
+    Escribir "El cliente debe pagar: $", montoAPagar;
+FinAlgoritmo
