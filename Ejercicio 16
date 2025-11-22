@@ -1,0 +1,17 @@
+Algoritmo CienPrimerosPares
+    Definir ArregloDePares Como Entero
+    Dimension ArregloDePares[100]
+    Definir i, NumPar Como Entero
+    NumPar = 2
+    Escribir "--- Almacenando los 100 primeros números pares ---"
+    Para i = 1 Hasta 100 Con Paso 1 Hacer
+        ArregloDePares[i] = NumPar
+        NumPar = NumPar + 2
+        
+    FinPara
+    Escribir "--- Arreglo de los 100 primeros números pares ---"
+    Para i = 1 Hasta 100 Con Paso 1 Hacer
+        Escribir "ArregloDePares[", i, "] = ", ArregloDePares[i]
+    FinPara
+    
+FinAlgoritmo
