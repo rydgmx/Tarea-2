@@ -1,0 +1,17 @@
+Algoritmo SumaArreglo
+    Definir N, i Como Entero
+    Definir Arreglo Como Entero
+    Definir Suma Como Entero
+    Escribir "Ingrese el tamaño del arreglo (N):"
+    Leer N
+    Dimension Arreglo[N]
+    Suma = 0
+    Para i = 1 Hasta N Con Paso 1 Hacer
+        Escribir "Ingrese el valor para el elemento ", i, ":"
+        Leer Arreglo[i]
+    FinPara
+    Para i = 1 Hasta N Con Paso 1 Hacer
+        Suma = Suma + Arreglo[i]
+    FinPara
+    Escribir "La suma total de los elementos es:", Suma
+FinAlgoritmo
