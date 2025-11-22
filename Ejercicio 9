@@ -1,0 +1,20 @@
+Algoritmo TablaMultiplicar
+    Definir N Como Entero; // El número para la tabla
+    Definir i Como Entero; // El contador/iterador (del 1 al 10)
+    Definir resultado Como Entero; // Para almacenar N * i
+    
+    Escribir "Ingrese el número entero N para obtener su tabla de multiplicar:";
+    Leer N;
+    
+    Escribir "---";
+    Escribir "Tabla de multiplicar del ", N;
+    Escribir "---";
+    Para i <- 1 Hasta 10 Con Paso 1 Hacer
+        // Proceso
+        resultado <- N * i;
+        Escribir N, " x ", i, " = ", resultado;
+    FinPara
+    
+    Escribir "---";
+    Escribir "Fin de la tabla.";
+FinAlgoritmo
